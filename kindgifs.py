@@ -22,7 +22,7 @@ row4 = {'a':[txtcolour,bgcolour,txtcolour],'b':[txtcolour,txtcolour,txtcolour],'
 if len(sys.argv) > 1:
   text = ' '.join(sys.argv[1:])
 else:
-  text = input('Say something! (be kind)\n > ')
+  text = raw_input('Say something! (be kind)\n > ')
 
 text = text.lower()
 
