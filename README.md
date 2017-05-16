@@ -1,4 +1,5 @@
-# kindgifs
+![kindgifs](https://raw.githubusercontent.com/ianfare/kindgifs/master/kindgifs.gif)
+
 A little script to make cute pixelly gifs of text and tiny flowers
 
 ![be kind](https://raw.githubusercontent.com/ianfare/kindgifs/master/be_kind.gif)
