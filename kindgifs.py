@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 from PIL import Image
 import sys
 import imageio
@@ -22,7 +24,7 @@ row4 = {'a':[txtcolour,bgcolour,txtcolour],'b':[txtcolour,txtcolour,txtcolour],'
 if len(sys.argv) > 1:
   text = ' '.join(sys.argv[1:])
 else:
-  text = raw_input('Say something! (be kind)\n > ')
+  text = input('Say something! (be kind)\n > ')
 
 text = text.lower()
 
