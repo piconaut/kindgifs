@@ -25,7 +25,7 @@ while True:
         print(mention.text)
         text = ' '.join(mention.text.split('@kindgifs ')[1:])
         try:
-          subprocess.call(['./kindgifs/kindgifs.py', text])
+          subprocess.call(['./kindgifs/kindgifs.py', text.replace('*','\*')])
           fname = text.replace(' ','_') + '.gif'
           print('@'+mention.user.screen_name)
           api.update_with_media(fname,status='@'+mention.user.screen_name,in_reply_to_status_id=mention.id)
