@@ -85,6 +85,8 @@ if pride == True:
           pixels[i][j] = (0,76,255)
         elif i == 7:
           pixels[i][j] = (118,6,135)
+      elif pixels[i][j] == bg:
+        pixels[i][j] = (255,255,255)
 
 width = len(pixels[0])
 
@@ -160,7 +162,9 @@ if pride == True:
           pixels[i][j] = (0,76,255)
         elif i == 7:
           pixels[i][j] = (118,6,135)
-
+      elif pixels[i][j] == bg:
+        pixels[i][j] = (255,255,255)
+          
 width = len(pixels[0])
 
 # Need to rearrange pixels to be all in one list
