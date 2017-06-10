@@ -5,7 +5,6 @@ import sys
 import imageio
 import os
 
-pride = False
 height = 10
 bg = (255,117,255)
 tx = (255,255,255)
@@ -29,9 +28,6 @@ else:
 
 text = text.lower()
 print(text)
-if ' -p ' in text:
-  pride = True
-  text = text.replace(' -p ','')
 
 pixels = []
 # Five columns at left
@@ -69,25 +65,6 @@ pixels[4][-3] = tx
 pixels[5][-2] = tx
 pixels[5][-4] = tx
 pixels[6][-3] = tx
-
-if pride == True:
-  for i in range(len(pixels)):
-    for j in range(len(pixels[i])):
-      if pixels[i][j] == tx:
-        if i == 2:
-          pixels[i][j] = (228,2,4)
-        elif i == 3:
-          pixels[i][j] = (255,139,1)
-        elif i == 4:
-          pixels[i][j] = (255,236,0)
-        elif i == 5:
-          pixels[i][j] = (0,127,39)
-        elif i == 6:
-          pixels[i][j] = (0,76,255)
-        elif i == 7:
-          pixels[i][j] = (118,6,135)
-      elif pixels[i][j] == bg:
-        pixels[i][j] = (255,255,255)
 
 width = len(pixels[0])
 
@@ -147,25 +124,6 @@ pixels[4][-2] = tx
 pixels[4][-4] = tx
 pixels[5][-3] = tx
 
-if pride == True:
-  for i in range(len(pixels)):
-    for j in range(len(pixels[i])):
-      if pixels[i][j] == tx:
-        if i == 2:
-          pixels[i][j] = (228,2,4)
-        elif i == 3:
-          pixels[i][j] = (255,139,1)
-        elif i == 4:
-          pixels[i][j] = (255,236,0)
-        elif i == 5:
-          pixels[i][j] = (0,127,39)
-        elif i == 6:
-          pixels[i][j] = (0,76,255)
-        elif i == 7:
-          pixels[i][j] = (118,6,135)
-      elif pixels[i][j] == bg:
-        pixels[i][j] = (255,255,255)
-          
 width = len(pixels[0])
 
 # Need to rearrange pixels to be all in one list
