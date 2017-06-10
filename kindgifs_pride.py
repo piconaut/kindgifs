@@ -5,6 +5,7 @@ import sys
 import imageio
 import os
 
+pride = False
 height = 10
 bg = (255,117,255)
 tx = (255,255,255)
